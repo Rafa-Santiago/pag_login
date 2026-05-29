@@ -12,7 +12,7 @@
 
 <body>
     <main class="container">
-        <form action="#" method="post">
+        <form action="#" method="post" id="form-login">
             <h1>Bem vindo!</h1>
 
             <!-- Campo de Email -->
@@ -20,7 +20,7 @@
                 <label for="email">E-mail</label>
                 <div class="input-field">
                     <input id="email" name="email" placeholder="Digite sua e-mail..." type="email" required>
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa fa-user"></i>
                 </div>
             </div>
 
@@ -29,7 +29,7 @@
                 <label for="password">Senha</label>
                 <div class="input-field">
                     <input id="password" name="password" placeholder="Digite sua senha..." type="password" required>
-                    <i class="fa-solid fa-key"></i>
+                    <i class="fa fa-eye" id="btn-eye" style="cursor: pointer;"></i>
                 </div>
             </div>
 
@@ -51,6 +51,7 @@
             </div>
         </form>
     </main>
+    <script src="login.js"></script>
 </body>
 
 </html>
