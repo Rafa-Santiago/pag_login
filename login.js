@@ -20,3 +20,21 @@ btnEye.addEventListener('click', function () {
             btnEye.classList.add('fa-eye');
         }
     });
+
+//função 2: validar o formulário de login
+formLogin.addEventListener('submit', function (event) {
+    //event.preventDefault() para evitar que o formulário seja enviado e a página seja recarregada
+    event.preventDefault();
+
+    //pegar valores que  o usuario digitou e remover espaços em branco com .trim()
+    const emailValue = emailInput.value.trim();
+    const passwordValue = passwordInput.value.trim();
+
+    //verificar se o email e a senha estão preenchidos
+    if (emailValue === '' || passwordValue === '') {
+        alert('Por favor, preencha todos os campos.');
+    } else {
+        //se os campos estiverem preenchidos, exibir uma mensagem de sucesso 
+        alert('Login bem-sucedido!');
+    }
+})
