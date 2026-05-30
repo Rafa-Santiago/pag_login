@@ -19,6 +19,7 @@ btnEye.classList.add('fa-eye-slash');
     //mudar o icone do olho para indicar que a senha está oculta
     btnEye.classList.remove('fa-eye-slash');
     btnEye.classList.add('fa-eye');
+    }
 });
 
 //função 2: validar o formulário de cadastro
