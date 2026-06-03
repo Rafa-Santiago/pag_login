@@ -35,6 +35,6 @@ formLogin.addEventListener('submit', function (event) {
         alert('Por favor, preencha todos os campos.');
     } else {
         //se os campos estiverem preenchidos, exibir uma mensagem de sucesso 
-        alert('Login bem-sucedido!');
+        window.location.href = 'home.html';
     }
 })
